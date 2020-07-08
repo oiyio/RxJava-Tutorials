@@ -1,2 +1,5 @@
+include ':external-tutorial-JoaoMotondon'
+include ':external-tutorial-amitshekhariitbhu'
+include ':chapter1-smarttoolfactory'
 rootProject.name = 'RxJavaTutorial'
 

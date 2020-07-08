@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_combining_observables_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This example demonstrates how to combine items emitted from multiple Observables." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Emitted numbers:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmittedNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnMergeOperatorUsingListOfObservablesTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start merge() w/List of Observables Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnMergeOperatorUsingMultiplesObservablesTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start merge() w/Multiples Observables Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnMergeOperatorUsingMultiplesObservablesAndEmitAnErrorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start merge() w/Multiples Observables and Error Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnMergeDelayErrorOperatorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start mergeDelayError()Test"
+                    android:textAllCaps="false" />
+
+
+                <Button
+                    android:id="@+id/btnMergeWithOperatorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start mergeWith() Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnZipOperatorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start zip() Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnZipWithOperatorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start zipWith() Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnCombineLatestOperatorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start combineLatest() Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnSwitchOnNextOperatorTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start switchOnNext() First Test"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnSwitchOnNextOperatorTest2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start switchOnNext() Second Test"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
